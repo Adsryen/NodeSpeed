@@ -14,21 +14,7 @@ Batch speed measuring tool based on Shadowsocks(R) and V2Ray
 
 ## 注意事项
 
-- 测速及解锁测试仅供参考，不代表实际使用情况，由于网络情况变化、Netflix封锁及ip更换，测速具有时效性
-
-- 本项目使用 [Python](https://www.python.org/) 编写，使用前请完成环境安装
-- 首次运行前请执行 开始测速.bat 安装pip及相关依赖，也可使用 pip install -r requirements.txt 命令自行安装
-- logs文件夹用于记录测速日志，包含节点的详细信息及测速订阅，非必要请勿泄露
-- 执行 开始测速.bat 批处理命令即可测速，测速结果保存在 results 文件夹下，不过大佬喜欢用命令行测也可以
-- 因为需要依赖 Python 环境，且本项目仍在测试阶段，可能存在部分 bug ，可到 [tg 群组](https://t.me/SSRSpeedN) 进行反馈。
-- Netflix 解锁测速结果说明:
-~~~~text
-Full Native             原生全解锁 
-Full Dns                DNS 全解锁
-Only original           仅解锁自制剧
-None                    未解锁
-其中原生解锁和DNS解锁只是解锁方式有区别，实际体验区别不大，在电视端使用时DNS解锁可能会提示使用代理。
-~~~~
+- 由于通过Github服务器测试节点速度和墙内存在很大区别，故修改通过青龙面板在本地路由器上运行；
 
 ## 特性
 
@@ -143,6 +129,11 @@ python main.py -u "https://home.yoyu.dev/subscriptionlink" --include 香港 Azur
   - 在 ssrspeed_config.json 文件下第 16 行及第 25 行，可以设置是否进行udp类型及Netflix解锁测试，默认允许。在 21-23行可以分别设置是否进行 ping / Google ping 测试，默认允许，若不进行测试，对应项在测速图上显示为0
 - **修改测速方式**
   - 在 ssrspeed_config.json 文件下第 24 行，可以设置采用单/多线程测速方式或均速/最高速测速方式，默认为前者 
+
+
+ql repo https://github.com/vpei/node.git "node" "" "^jd[^_]|USER|utils|ql|JD|sendNotify|pillow|requests|requests[socks]|pysocks|flask|flask-cors|pyyaml|aiohttp|aiohttp_socks|pynat|beautifulsoup4|selenium"
+
+
 
 ## 详细使用方法
 

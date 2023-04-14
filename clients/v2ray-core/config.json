@@ -27,9 +27,9 @@
             "vnext":
             [
                 {
-                    "address": "3.112.221.191",
+                    "address": "cf.fovi.tk",
                     "port": 443,
-                    "users": [{"id": "89de25af-b37c-4a0f-9d5c-f842fdb9e08e", "alterId": 1, "security": "auto", "level": 0}]
+                    "users": [{"id": "bf67437e-6c90-45ca-abc2-c7240a5ce2aa", "alterId": 0, "security": "auto", "level": 0}]
                 }
             ],
             "servers": null,
@@ -38,10 +38,11 @@
         "streamSettings":
         {
             "network": "ws",
-            "security": "none",
+            "security": "tls",
+            "tlsSettings": {},
             "wsSettings": 
             {
-                "path": "/"
+                "path": "/eisasqa"
             }
 		}
 	},
